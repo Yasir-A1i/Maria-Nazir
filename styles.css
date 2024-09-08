@@ -1,0 +1,107 @@
+:root{
+    --bg:#131418;
+    --button-bg:#676767;
+    --border:  #525252;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "SUSE", sans-serif ;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: auto;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content {
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Makes sure content is above the video */
+    color: #fff; /* Text color for readability on video */
+    padding: 20px;
+    /* Add other styles for your content here */
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video-background {
+    top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Ensures video is behind other content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the background */
+}
+        .options {
+            margin-top: 50px;
+            background-color: var(--bg);
+            display: flex;
+            column-gap: 15px;
+            border-radius: 100px;
+            align-items: center;
+            padding: 5px;
+            position: relative;
+            width: 310px; /* Adjust as needed */
+            height: 44px; /* Adjust as needed */
+            border: 1px solid var(--border);
+        }
+        .options button {
+            font-size: 1.2rem;
+            cursor: pointer;
+            color:white;
+            background-color: transparent;
+            border-radius: 200px;
+            /* font-weight: bold; */
+            border-width: 0;                                         
+            position: relative;
+            z-index: 1;
+        }
+        #btn {
+            align-items: center;
+            border-radius: 100px;
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            background-color: rgb(67, 67, 67);
+            transition: all 0.3s ease; /* Smooth transition */
+            top: 7px;
+            left: 5px;
+        }
+        .allbtn{
+            width: 80px;
+            height: 40px;
+        }
+        .aboutbtn{
+            width: 100px;
+            height: 40px;
+        }
+        .workbtn{
+            width: 120px;
+            height: 40px;
+        }
+        .same{
+            width: 90vw;
+            height: 500px;
+            background-color: #580000;
+            margin: 40px;
+        }

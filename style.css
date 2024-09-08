@@ -1,0 +1,153 @@
+/* styles.css */
+:root{
+    --bg:#131418;
+    --options-bg:#141820;
+    --border: rgb(89, 89, 89);
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.video-background {
+    top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Ensures video is behind other content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the background */
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Makes sure content is above the video */
+    color: #fff; /* Text color for readability on video */
+    padding: 20px;
+    /* Add other styles for your content here */
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.options {
+    margin-top: 50px;
+    background-color: var(--bg);
+    display: flex;
+    column-gap: 15px;
+    border-radius: 100px;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    width: 320px; /* Adjust as needed */
+    height: 44px; /* Adjust as needed */
+    border: 1px solid var(--border);
+}
+.options button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color:white;
+    background-color: transparent;
+    border-radius: 200px;
+    /* font-weight: bold; */
+    border-width: 0;                                         
+    position: relative;
+    z-index: 1;
+}
+#btn {
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(67, 67, 67);
+    transition: all 0.3s ease; /* Smooth transition */
+    top: 7px;
+    left: 5px;
+}
+.allbtn{
+    width: 80px;
+    height: 40px;
+}
+.aboutbtn{
+    width: 100px;
+    height: 40px;
+}
+.workbtn{
+    width: 120px;
+    height: 40px;
+}
+
+
+.maindivs{
+    width: 90%;
+    height: 700px;
+    /* background-color: black; */
+}
+
+.main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.same{
+    width: 40%;
+    height: 400px;
+    background-color: var(--bg);
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    opacity: 0.9;
+    transition: 0.3s;
+    margin: 15px;
+}
+.same:hover{
+    opacity: 1;
+    background-color: #16181c;
+    box-shadow: 4px 5px 20px 20px #7a7a7a08;
+}
+.first_row{
+    display: flex;
+    color: hwb(0 89% 11%);
+}
+.map_portfolio{
+    margin: 15px;
+    width: 25%;
+    height: 400px;
+    background-color: #ffffff00;
+    display: inline-block;
+
+}
+.map{
+    display: block;
+    height: 270px;
+    width: 100%;
+    margin: 0;
+    background: url("assets/map.png");
+    background-size: cover;
+    background-position: 8px;
+}
+.portfolio{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
