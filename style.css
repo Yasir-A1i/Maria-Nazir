@@ -5,12 +5,18 @@
     --border: rgb(89, 89, 89);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     height: 100vh;
+}
+*{
+    font-family: "SUSE", sans-serif ;
+
 }
 
 .video-background {
@@ -111,8 +117,8 @@ body, html {
     height: 400px;
     background-color: var(--bg);
     border-radius: 40px;
-    border: 1px solid var(--border);
-    opacity: 0.9;
+    border: 0.5px solid  rgba(89, 89, 89, 0.536);
+    opacity: 0.8;
     transition: 0.3s;
     margin: 15px;
 }
@@ -120,6 +126,8 @@ body, html {
     opacity: 1;
     background-color: #16181c;
     box-shadow: 4px 5px 20px 20px #7a7a7a08;
+    border: 1px solid var(--border);
+
 }
 .first_row{
     display: flex;
