@@ -266,4 +266,36 @@ body, html {
 }
 
 
-
+.logo{
+    position: relative;
+    cursor: copy;
+}
+.logo::before{
+    content: '';
+    background: url("logo.png");
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    top: 10px;
+    left: 5px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+.logo::after{
+    content: 'Flutter Developer';
+    position: absolute;
+    right: 0;
+    top: 35%;
+    margin-left: 10px;
+    font-size: 3rem;
+    color: white;
+    width: 70%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.logo:hover::before{
+    transform: rotate(90deg);
+}
+.logo:hover::after{
+    content: 'Maria Nazir';
+}
