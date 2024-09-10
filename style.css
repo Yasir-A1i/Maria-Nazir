@@ -105,6 +105,7 @@ body, html {
     width: 90%;
     height: 700px;
     /* background-color: black; */
+    display: flex;
 }
 
 .main{
@@ -168,9 +169,23 @@ body, html {
     align-items: center;
     font-size: 2.5rem;
     text-align: center;
-    color: transparent;
-    -webkit-text-stroke: 0.4px white;
+    color: white;
     transition: all 0.5s ease;
+}
+.portfolio b{
+    border-right: 5px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+                typing 4s 2s steps(18) infinite,
+                cursor .4s step-end infinite alternate-reverse;
+}
+@keyframes cursor {
+        50% {border-color: transparent;}
+}
+@keyframes typing {
+    from { width: 0;}
+    to {width: 100%;}
 }
 .portfolio:hover{
     -webkit-text-stroke: 0;
@@ -249,5 +264,6 @@ body, html {
     margin: auto;
     font-size: 1.5rem;
 }
+
 
 
