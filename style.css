@@ -188,7 +188,7 @@ body, html {
 }
 @keyframes typing {
     from { width: 0;}
-    to {width: 40%;}
+    to {width: 100%;}
 }
 .profile_map_port{
     width: 60%;
