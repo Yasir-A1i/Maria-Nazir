@@ -178,6 +178,7 @@ body, html {
     border-right: 5px solid rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
+    width: max-content;
     animation: 
                 typing 4s 2s steps(18) infinite,
                 cursor .4s step-end infinite alternate-reverse;
@@ -187,7 +188,7 @@ body, html {
 }
 @keyframes typing {
     from { width: 0;}
-    to {width: 100%;}
+    to {width: 40%;}
 }
 .profile_map_port{
     width: 60%;
@@ -308,44 +309,6 @@ body, html {
 }
 
 
- 
-@media screen and (max-width:1550px) {
-    .logo::before{
-        width: 130px;height: 130px;
-    }
-}
-@media screen and (max-width:1300px) {
-    .profile_pic{
-        width: 120px;height: 110px;
-        background-size: 135px;
-    }
-}
-@media screen and (max-width:1200px) {
-    .map_portfolio{
-        display: block;
-    }
-    .cv_logo{
-        width: 100%;   
-        display: flex; 
-        flex-direction: row;
-    }
-    .first_row{
-        flex-direction: column;
-    }
-    .logo{
-        width: 50%;
-    }
-    .logo::after{
-        font-size: max(35px, 2.5vw);
-    }
-    .profile_subtext{
-        font-size: larger;
-    }
-    .cv{
-        width: 50%;
-        height: clamp(200px, 9vw, 250px);
-    }
-    .profile_map_port{
-        width: 100%;
-    }
-}
+
+
+

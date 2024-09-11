@@ -1,0 +1,142 @@
+ 
+@media screen and (max-width:1550px) {
+    .logo::before{
+        width: 130px;height: 130px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .profile_pic{
+        width: 120px;height: 110px;
+        background-size: 135px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .map_portfolio{
+        display: block;
+    }
+    .cv_logo{
+        width: 100%;   
+        display: flex; 
+        flex-direction: row;
+    }
+    .first_row{
+        flex-direction: column;
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo::after{
+        font-size: max(35px, 2.5vw);
+    }
+    .profile_subtext{
+        font-size: larger;
+    }
+    .cv{
+        width: 50%;
+        height: clamp(200px, 9vw, 250px);
+    }
+    .profile_map_port{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:1050px) {
+    .logo::before{
+        width: 120px;
+        height: 120px;
+    }
+    .cv{
+        column-gap: 120px;
+    }
+    .cv, .logo{
+        height: 180px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px) {
+    .logo::after{
+        width: 60%;
+    }
+    .cv{
+        column-gap: 100px ;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+    .cv{
+        column-gap: 20px ;
+        height: 120px;
+        font-size: 2.5rem;
+        border-radius: 30px;
+    }
+    .logo::after{
+        top: 25%;   
+    }
+    .logo{
+        height: 120px;
+        border-radius: 30px;
+
+    }
+    .down_cv{
+        width: 60px;
+        height: 60px;
+    }
+    .logo::before{
+        width: 100px;height: 100px;
+        top: 10%;
+    }
+    .logo::after{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:690px) {
+    .profile_map_port{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+    }
+    .map_portfolio{
+        width: 100%;
+    }
+    .profile_heading{font-size: 4rem;}
+    .profile_subtext{font-size: 1.5rem;}
+    .cv_logo{
+        flex-direction: column;
+    }
+    .cv, .logo{
+        width: 100%;
+    }
+    .logo::after{
+        top: 35%;
+    }
+    #all{
+        width: 95%;
+    }
+
+}
