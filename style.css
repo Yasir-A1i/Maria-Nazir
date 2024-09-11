@@ -101,12 +101,7 @@ body, html {
 }
 
 
-.maindivs{
-    width: 90%;
-    height: 700px;
-    /* background-color: black; */
-    display: flex;
-}
+
 
 .main{
     width: 100vw;
@@ -117,9 +112,15 @@ body, html {
     justify-content: center;
     margin-top: 200px;
 }
+.maindivs{
+    width: 90%;
+    height: 700px;
+    /* background-color: black; */
+    display: flex;
+}
 .same{
     width: 40%;
-    height: 400px;
+    height: max(400px, 15vw);
     background-color: var(--bg);
     border-radius: 40px;
     border: 0.5px solid  rgba(89, 89, 89, 0.536);
@@ -137,12 +138,13 @@ body, html {
 
 }
 .first_row{
+    width: 100%;
     display: flex;
     color: hwb(0 89% 11%);
 }
 .map_portfolio{
     margin: 15px;
-    width: 25%;
+    width: 45%;
     height: 400px;
     background-color: #ffffff00;
     display: inline-block;
@@ -167,7 +169,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 1.5vw, 2.1rem);
     text-align: center;
     color: white;
     transition: all 0.5s ease;
@@ -187,9 +189,9 @@ body, html {
     from { width: 0;}
     to {width: 100%;}
 }
-.portfolio:hover{
-    -webkit-text-stroke: 0;
-    color: white;
+.profile_map_port{
+    width: 60%;
+    display: flex;
 }
 .cv_logo{
     width: 40%;
@@ -211,6 +213,9 @@ body, html {
     color: grey;
     letter-spacing: 5px;
 }
+.cvtxt{
+    margin-left: 10px;
+}
 .down_cv{
     width: 100px;
     height: 100px;
@@ -228,11 +233,12 @@ body, html {
 }
 .logo{
     width: 100%;
-    height: 200px;
+    height: clamp(200px, 9vw, 250px);
 }
 .profile{
     display: flex;
     flex-direction: column;
+    width: 55%;
 }
 .profile_text{
     width: 100%;
@@ -250,19 +256,18 @@ body, html {
     background: url("image.png");
     background-size: 200px;
     background-position: center;
-    display: flex;
 }
 .profile_heading{
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 10px;
     margin-bottom: 20px;
-    font-size: 3.5rem;
+    font-size: max(40px, 3.5vw);
     font-weight: bolder;
 }
 .profile_subtext{
-    width: 90%;
+    width: 80%;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: max(12px, 1.5vw);
 }
 
 
@@ -274,12 +279,14 @@ body, html {
     content: '';
     background: url("logo.png");
     position: absolute;
-    width: 30%;
-    height: 90%;
-    top: 10px;
+    width: 150px;
+    height: 150px;
+    top: 15%;
     left: 5px;
     background-size: cover;
     transition: all 1s ease-in-out;
+    border-radius: 50%;
+    background-position: center;
 }
 .logo::after{
     content: 'Flutter Developer';
@@ -287,7 +294,7 @@ body, html {
     right: 0;
     top: 35%;
     margin-left: 10px;
-    font-size: 3rem;
+    font-size: max(25px, 2.5vw);
     color: white;
     width: 70%;
     height: 100%;
@@ -298,4 +305,47 @@ body, html {
 }
 .logo:hover::after{
     content: 'Maria Nazir';
+}
+
+
+ 
+@media screen and (max-width:1550px) {
+    .logo::before{
+        width: 130px;height: 130px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .profile_pic{
+        width: 120px;height: 110px;
+        background-size: 135px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .map_portfolio{
+        display: block;
+    }
+    .cv_logo{
+        width: 100%;   
+        display: flex; 
+        flex-direction: row;
+    }
+    .first_row{
+        flex-direction: column;
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo::after{
+        font-size: max(35px, 2.5vw);
+    }
+    .profile_subtext{
+        font-size: larger;
+    }
+    .cv{
+        width: 50%;
+        height: clamp(200px, 9vw, 250px);
+    }
+    .profile_map_port{
+        width: 100%;
+    }
 }
