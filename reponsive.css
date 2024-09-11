@@ -121,7 +121,7 @@
     .map_portfolio{
         width: 100%;
     }
-    .profile_heading{font-size: 4rem;}
+    .profile_heading{font-size: 4rem; margin-top: 40px;}
     .profile_subtext{font-size: 1.5rem;}
     .cv_logo{
         flex-direction: column;
@@ -133,7 +133,11 @@
         top: 35%;
     }
     #all{
-        width: 95%;
+        width: 80%;
+        margin-right: 5px;
+    }
+    .profile{
+        width: 100%;
     }
 
 }
