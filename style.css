@@ -320,16 +320,16 @@ body, html {
     display: flex;
     width: 90%;
     height: auto;
-    background-color: red;
+    /* background-color: red; */
 }
 .social{
     width: 55%;
     height: 700px;
-    background-color: peru;
+    /* background-color: peru; */
 }
 .experience{
     width: 45%;
-    height: 1000px;background-color: darkblue;
+    /* height: 1000px;background-color: darkblue; */
 }
 .tech_git_and{
     width: 100%;
@@ -349,7 +349,7 @@ body, html {
     height: 95%;
 }
 .git{
-    width: 100%;
+    width: 12vw;
     height: 50%;
     display: flex;
     align-items: center;
@@ -367,15 +367,15 @@ body, html {
     display: flex;
 }
 .linked{
-    width: 25%;
-    height: 210px;
+    width: 30%;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center
 }
 .mail{
-    width: 75%;
-    height: 220px;
+    width: 70%;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,22 +387,21 @@ body, html {
     border-radius: 20px;
 
 }
-.linkedimg{
-    background: url("Linked.png");
-    background-size: cover;
-    background-position: center;
+.linked img{
+    width: 100px;
+    height: 100px;
 }
-.gitimg{
-    background: url("Github.png");
-    background-size: cover;
-    background-position: center;
+.git img{
+    width: 100px;
+    height: 100px;
 }
-.mailimg{
-    background: url("Gmail.png");
-    background-size: cover;
-    background-position: center;
+.mail img{
+    width: 100px;
+    height: 100px;
 }
-
+.and img{
+    width: 100px;height: 100px;
+}
 
 
 
