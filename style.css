@@ -333,7 +333,7 @@ body, html {
 }
 .tech_git_and{
     width: 100%;
-    height: 500px;
+    height: 400px;
     display:flex;
     column-gap: 30px;
 }
@@ -347,13 +347,75 @@ body, html {
 .tech{
     width: 75%;
     height: 95%;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    column-gap: 20px;
+    top: 0;
+    left: 0;
+    animation: slide 30s linear infinite alternate-reverse; /* Adjust duration for speed */
+}
+.slider img {
+    width: 30%; /* 20% of container width */
+    /* background-color: white; */
+    border-radius: 20px;
+    height: 80px; /* Adjust height automatically */
+}
+.tech::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,128,0) 75%, #131418 100%);
+
+    z-index: 1; /* Ensure gradient is on top */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%); /* Start from right */
+    }
+    to {
+        transform: translateX(-900%); /* Move to left */
+    }
+}
+.tech div{
+    /* color: white; */
+    position: absolute;
+    z-index: 0;
+    background: transparent;
+}
+.t1{
+    color: rgb(93, 93, 93);
+    bottom: 70px;
+    left: 20px;
+}
+.t2{
+    color: white;
+    font-size: 2vw;
+    bottom: 30px;
+    left: 20px;
 }
 .git{
     width: 12vw;
     height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+}
+.gitlink{
+    display: inline;
 }
 .and{
     width: 100%;
@@ -376,6 +438,34 @@ body, html {
 .mail{
     width: 70%;
     height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.git a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.and a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linked a{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
