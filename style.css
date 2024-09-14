@@ -330,6 +330,7 @@ body, html {
 .experience{
     width: 45%;
     /* height: 1000px;background-color: darkblue; */
+    height: 900px;
 }
 .tech_git_and{
     width: 100%;
@@ -491,6 +492,67 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
 }
 .and img{
     width: 100px;height: 100px;
+}
+
+
+
+.experience{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 590px;
+}
+
+
+.years{
+    margin-top: 30px;
+    width: 100%;
+    height: 7%;
+    border-bottom: 1px solid var(--border);
+    color: #6a6a6a;
+}
+.years div{
+    width: 90%;
+    margin: auto;
+}
+.techa2z{
+    width: 90%;
+    height: 31%;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+.riss{
+    width: 90%;
+    height: 31%;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    margin: auto;
+}
+.devmaxim{
+    width: 90%;
+    height: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.company{
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+.time{
+    font-size: 1.2rem;  
+}
+.techa2z .company{
+    text-decoration: none;
 }
 
 
