@@ -555,5 +555,7 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
     text-decoration: none;
 }
 
-
+#about{
+    margin-bottom: 20px;
+}
 
