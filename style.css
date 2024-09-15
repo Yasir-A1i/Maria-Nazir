@@ -1,21 +1,23 @@
 /* styles.css */
-:root{
-    --bg:#131418;
-    --options-bg:#141820;
+:root {
+    --bg: #131418;
+    --options-bg: #141820;
     --border: rgb(89, 89, 89);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     height: 100vh;
 }
-*{
-    font-family: "SUSE", sans-serif ;
+
+* {
+    font-family: "SUSE", sans-serif;
 
 }
 
@@ -27,20 +29,24 @@ body, html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    z-index: -1; /* Ensures video is behind other content */
+    z-index: -1;
+    /* Ensures video is behind other content */
 }
 
 .video-background video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the background */
+    object-fit: cover;
+    /* Ensures video covers the background */
 }
 
 .content {
     position: fixed;
     top: 0;
-    z-index: 1; /* Makes sure content is above the video */
-    color: #fff; /* Text color for readability on video */
+    z-index: 1;
+    /* Makes sure content is above the video */
+    color: #fff;
+    /* Text color for readability on video */
     padding: 20px;
     /* Add other styles for your content here */
     width: 90vw;
@@ -48,6 +54,7 @@ body, html {
     display: flex;
     justify-content: center;
 }
+
 .options {
     margin-top: 50px;
     background-color: var(--bg);
@@ -57,25 +64,30 @@ body, html {
     align-items: center;
     padding: 5px;
     position: relative;
-    width: 320px; /* Adjust as needed */
-    height: 44px; /* Adjust as needed */
+    width: 320px;
+    /* Adjust as needed */
+    height: 44px;
+    /* Adjust as needed */
     border: 1px solid var(--border);
     transition: 0.5s ease;
 }
-.options:hover{
+
+.options:hover {
     box-shadow: 0px 20px 15px 0px #00000063;
 }
+
 .options button {
     font-size: 1.2rem;
     cursor: pointer;
-    color:white;
+    color: white;
     background-color: transparent;
     border-radius: 200px;
     /* font-weight: bold; */
-    border-width: 0;                                         
+    border-width: 0;
     position: relative;
     z-index: 1;
 }
+
 #btn {
     align-items: center;
     border-radius: 100px;
@@ -83,19 +95,23 @@ body, html {
     width: 80px;
     height: 40px;
     background-color: rgb(67, 67, 67);
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease;
+    /* Smooth transition */
     top: 7px;
     left: 5px;
 }
-.allbtn{
+
+.allbtn {
     width: 80px;
     height: 40px;
 }
-.aboutbtn{
+
+.aboutbtn {
     width: 100px;
     height: 40px;
 }
-.workbtn{
+
+.workbtn {
     width: 120px;
     height: 40px;
 }
@@ -103,7 +119,7 @@ body, html {
 
 
 
-.main{
+.main {
     width: 100vw;
     height: auto;
     display: flex;
@@ -112,23 +128,26 @@ body, html {
     justify-content: center;
     margin-top: 200px;
 }
-.maindivs{
+
+.maindivs {
     width: 90%;
     height: 700px;
     /* background-color: black; */
     display: flex;
 }
-.same{
+
+.same {
     width: 40%;
     height: max(400px, 15vw);
     background-color: var(--bg);
     border-radius: 40px;
-    border: 0.5px solid  rgba(89, 89, 89, 0.536);
+    border: 0.5px solid rgba(89, 89, 89, 0.536);
     opacity: 0.8;
     transition: 0.3s;
     margin: 15px;
 }
-.same:hover{
+
+.same:hover {
     margin-bottom: 15px;
     transform: translateY(5px);
     opacity: 1;
@@ -137,16 +156,19 @@ body, html {
     border: 1px solid var(--border);
 
 }
-#all{
+
+#all {
     height: auto;
     margin-bottom: 20px;
 }
-.first_row{
+
+.first_row {
     width: 100%;
     display: flex;
     color: hwb(0 89% 11%);
 }
-.map_portfolio{
+
+.map_portfolio {
     margin: 15px;
     width: 45%;
     height: 400px;
@@ -154,7 +176,8 @@ body, html {
     display: inline-block;
 
 }
-.map{
+
+.map {
     display: block;
     height: 270px;
     width: 100%;
@@ -163,7 +186,8 @@ body, html {
     background-size: cover;
     background-position: 8px;
 }
-.portfolio{
+
+.portfolio {
     display: flex;
     height: 100px;
     width: 100%;
@@ -178,33 +202,46 @@ body, html {
     color: white;
     transition: all 0.5s ease;
 }
-.portfolio b{
+
+.portfolio b {
     border-right: 5px solid rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
     width: max-content;
-    animation: 
-                typing 4s 2s steps(18) infinite,
-                cursor .4s step-end infinite alternate-reverse;
+    animation:
+        typing 4s 2s steps(18) infinite,
+        cursor .4s step-end infinite alternate-reverse;
 }
+
 @keyframes cursor {
-        50% {border-color: transparent;}
+    50% {
+        border-color: transparent;
+    }
 }
+
 @keyframes typing {
-    from { width: 0;}
-    to {width: 100%;}
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
-.profile_map_port{
+
+.profile_map_port {
     width: 60%;
     display: flex;
 }
-.cv_logo{
+
+.cv_logo {
     width: 40%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
-.cv{
+
+.cv {
     width: 100%;
     height: 150px;
     font-size: 3rem;
@@ -213,46 +250,55 @@ body, html {
     justify-content: center;
     column-gap: 150px;
 }
-.cv2024{
+
+.cv2024 {
     font-size: 1.2rem;
     color: grey;
     letter-spacing: 5px;
 }
-.cvtxt{
+
+.cvtxt {
     margin-left: 10px;
 }
-.down_cv{
+
+.down_cv {
     width: 100px;
     height: 100px;
     border-radius: 20px;
     background-color: transparent;
     border-width: 0px;
 }
-.down_cv svg{
+
+.down_cv svg {
     width: 100%;
     height: 100%;
     fill: grey;
 }
-.down_cv svg:hover{
+
+.down_cv svg:hover {
     fill: white;
 }
-.logo{
+
+.logo {
     width: 100%;
     height: clamp(200px, 9vw, 250px);
 }
-.profile{
+
+.profile {
     display: flex;
     flex-direction: column;
     width: 55%;
 }
-.profile_text{
+
+.profile_text {
     width: 100%;
     display: flex;
     height: auto;
     align-items: center;
     column-gap: 10px;
 }
-.profile_pic{
+
+.profile_pic {
     margin-top: 50px;
     margin-left: 30px;
     width: 150px;
@@ -262,14 +308,16 @@ body, html {
     background-size: 200px;
     background-position: center;
 }
-.profile_heading{
+
+.profile_heading {
     margin-top: 80px;
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: max(40px, 3.5vw);
     font-weight: bolder;
 }
-.profile_subtext{
+
+.profile_subtext {
     width: 80%;
     margin: auto;
     font-size: max(12px, 1.5vw);
@@ -277,11 +325,12 @@ body, html {
 }
 
 
-.logo{
+.logo {
     position: relative;
     cursor: copy;
 }
-.logo::before{
+
+.logo::before {
     content: '';
     background: url("logo.png");
     position: absolute;
@@ -294,7 +343,8 @@ body, html {
     border-radius: 50%;
     background-position: center;
 }
-.logo::after{
+
+.logo::after {
     content: 'Flutter Developer';
     position: absolute;
     right: 0;
@@ -306,51 +356,59 @@ body, html {
     height: 100%;
     transition: all 1s ease-in-out;
 }
-.logo:hover::before{
+
+.logo:hover::before {
     transform: rotate(90deg);
 }
-.logo:hover::after{
+
+.logo:hover::after {
     content: 'Maria Nazir';
 }
 
 
 
 
-#about{
+#about {
     display: flex;
     width: 90%;
     height: auto;
     /* background-color: red; */
 }
-.social{
+
+.social {
     width: 55%;
     height: 700px;
     /* background-color: peru; */
 }
-.experience{
+
+.experience {
     width: 45%;
     /* height: 1000px;background-color: darkblue; */
     height: 900px;
 }
-.tech_git_and{
+
+.tech_git_and {
     width: 100%;
     height: 400px;
-    display:flex;
+    display: flex;
     column-gap: 30px;
 }
-.git_and{
+
+.git_and {
     width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
 
 }
-.tech{
+
+.tech {
     width: 75%;
     height: 95%;
     overflow: hidden;
     position: relative;
 }
+
 .slider {
     z-index: 0;
     display: flex;
@@ -361,14 +419,19 @@ body, html {
     column-gap: 20px;
     top: 0;
     left: 0;
-    animation: slide 30s  linear infinite alternate-reverse; /* Adjust duration for speed */
+    animation: slide 30s linear infinite alternate-reverse;
+    /* Adjust duration for speed */
 }
+
 .slider img {
-    width: 30%; /* 20% of container width */
+    width: 30%;
+    /* 20% of container width */
     /* background-color: white; */
     border-radius: 20px;
-    height: 80px; /* Adjust height automatically */
+    height: 80px;
+    /* Adjust height automatically */
 }
+
 .tech::before {
     content: "";
     position: absolute;
@@ -376,38 +439,46 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,128,0) 75%, #131418 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #131418 0%, rgba(9, 9, 121, 0) 30%, rgba(9, 20, 128, 0) 75%, #131418 100%);
 
-    z-index: 1; /* Ensure gradient is on top */
+    z-index: 1;
+    /* Ensure gradient is on top */
 }
 
 @keyframes slide {
     from {
-        transform: translateX(100%); /* Start from right */
+        transform: translateX(100%);
+        /* Start from right */
     }
+
     to {
-        transform: translateX(-900%); /* Move to left */
+        transform: translateX(-900%);
+        /* Move to left */
     }
 }
-.tech div{
+
+.tech div {
     /* color: white; */
     position: absolute;
     z-index: 0;
     background: transparent;
 }
-.t1{
+
+.t1 {
     color: rgb(93, 93, 93);
     bottom: 70px;
     left: 40px;
 }
-.t2{
+
+.t2 {
     color: white;
     font-size: 2vw;
     bottom: 30px;
     left: 40px;
 }
-.git{
+
+.git {
     width: 100%;
     height: 50%;
     display: flex;
@@ -415,88 +486,103 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
     justify-content: center;
     position: relative;
 }
-.gitlink{
+
+.gitlink {
     display: inline;
 }
-.and{
+
+.and {
     width: 100%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center
 }
-.link_mail{
+
+.link_mail {
     width: 100%;
     display: flex;
 }
-.linked{
+
+.linked {
     width: 30%;
     height: 190px;
     display: flex;
     align-items: center;
     justify-content: center
 }
-.mail{
+
+.mail {
     width: 70%;
     height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.mail a{
+
+.mail a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.git a{
+
+.git a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.and a{
+
+.and a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.linked a{
+
+.linked a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.socialimg{
+
+.socialimg {
     width: 60%;
     height: 50%;
     /* background-color: red; */
     border-radius: 20px;
 
 }
-.linked img{
+
+.linked img {
     width: 100px;
     height: 100px;
 }
-.git img{
+
+.git img {
     width: 100px;
     height: 100px;
 }
-.mail img{
+
+.mail img {
     width: 100px;
     height: 100px;
 }
-.and img{
-    width: 100px;height: 100px;
+
+.and img {
+    width: 100px;
+    height: 100px;
 }
 
 
 
-.experience{
+.experience {
     color: white;
     display: flex;
     align-items: center;
@@ -505,18 +591,20 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
 }
 
 
-.years{
+.years {
     margin-top: 30px;
     width: 100%;
     height: 7%;
     border-bottom: 1px solid var(--border);
     color: #6a6a6a;
 }
-.years div{
+
+.years div {
     width: 90%;
     margin: auto;
 }
-.techa2z{
+
+.techa2z {
     width: 90%;
     height: 31%;
     border-bottom: 1px solid var(--border);
@@ -525,7 +613,8 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
     justify-content: center;
     row-gap: 10px;
 }
-.riss{
+
+.riss {
     width: 90%;
     height: 31%;
     border-bottom: 1px solid var(--border);
@@ -535,7 +624,8 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
     row-gap: 10px;
     margin: auto;
 }
-.devmaxim{
+
+.devmaxim {
     width: 90%;
     height: 31%;
     display: flex;
@@ -544,18 +634,100 @@ background: linear-gradient(90deg, #131418 0%, rgba(9,9,121,0) 30%, rgba(9,20,12
     row-gap: 10px;
 }
 
-.company{
+.company {
     font-size: 2rem;
     text-decoration: line-through;
 }
-.time{
-    font-size: 1.2rem;  
+
+.time {
+    font-size: 1.2rem;
 }
-.techa2z .company{
+
+.techa2z .company {
     text-decoration: none;
 }
 
-#about{
+#about {
     margin-bottom: 20px;
+}
+
+
+
+
+
+#work {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.projects {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.projectdetails {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+.project {
+    width: 400px;
+    height: 700px;
+    position: relative;
+
+}
+
+
+
+.coin {
+    background: url("coin.png");
+    background-size: contain;
+    background-position: center;
+
+}
+
+.exam {
+    background: url("exam.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.food {
+    background: url("food.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.questions {
+    background: url("questions.png");
+    background-size: contain;
+    background-position: center;
+}
+
+
+.gradient::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+    border-radius: 40px;
+
+
 }
 
