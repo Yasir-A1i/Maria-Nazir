@@ -183,6 +183,11 @@
     .mail{
         width: 50%;
     }
+    #work{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (max-width:500px) {

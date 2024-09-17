@@ -666,11 +666,12 @@ html {
 }
 
 .projects {
-    width: 50%;
+    width: max-content;
     height: 100px;
     text-align: center;
     align-content: center;
     color: white;
+    padding: 10px;
 }
 
 .projectdetails {
@@ -718,16 +719,33 @@ html {
 }
 
 
-.gradient::after{
-    content: '';
-    width: 0;
-    height: 100%;
+.gradient {
+    width: 101%;
+    height: 101%;
     position: absolute;
+    z-index: 0;
+    top: 0;
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
-    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
+    left: -1px;
     border-radius: 40px;
-
-
 }
 
+
+#work h2{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    width: 90%;
+}
+#work p{
+    color: rgb(190, 190, 190);
+    font-size: 1rem;
+    position: absolute;
+    left: 10px;
+    bottom: 0;  
+    width: 90%;
+
+}
