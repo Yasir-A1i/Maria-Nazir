@@ -717,6 +717,24 @@ html {
     background-size: contain;
     background-position: center;
 }
+.gym {
+    background: url("gym.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bgremove {
+    background: url("remove.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.anonymous {
+    background: url("anonymous.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 .gradient {
@@ -749,3 +767,4 @@ html {
     width: 90%;
 
 }
+
