@@ -1,89 +1,88 @@
- 
-@media screen and (max-width:1550px) {
-    .logo::before{
-        width: 130px;height: 130px;
-    }
-}
-@media screen and (max-width:1300px) {
-    .profile_pic{
-        width: 120px;height: 110px;
-        background-size: 135px;
-    }
-}
-@media screen and (max-width:1200px) {
-    .map_portfolio{
-        display: block;
-    }
-    .cv_logo{
-        width: 100%;   
-        display: flex; 
-        flex-direction: row;
-    }
-    .first_row{
-        flex-direction: column;
-    }
-    .logo{
-        width: 50%;
-    }
-    .logo::after{
-        font-size: max(35px, 2.5vw);
-    }
-    .profile_subtext{
-        font-size: larger;
-    }
-    .cv{
-        width: 50%;
-        height: clamp(200px, 9vw, 250px);
-    }
-    .profile_map_port{
-        width: 100%;
-    }
-}
+ @media screen and (max-width:1550px) {
+     .logo::before {
+         width: 130px;
+         height: 130px;
+     }
+ }
+
+ @media screen and (max-width:1300px) {
+     .profile_pic {
+         width: 120px;
+         height: 110px;
+         background-size: 135px;
+     }
+ }
+
+ @media screen and (max-width:1200px) {
+     .map_portfolio {
+         display: block;
+     }
+
+     .cv_logo {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+     }
+
+     .first_row {
+         flex-direction: column;
+     }
+
+     .logo {
+         width: 50%;
+     }
+
+     .logo::after {
+         font-size: max(35px, 2.5vw);
+     }
+
+     .profile_subtext {
+         font-size: larger;
+     }
+
+     .cv {
+         width: 50%;
+         height: clamp(200px, 9vw, 250px);
+     }
+
+     .profile_map_port {
+         width: 100%;
+     }
+ }
 
 
 
 
-@media screen and (max-width:1100px) {
-    #about{
-        flex-direction: column;
-    }
-    .social{
-        width: 100%;
-        height: 650px;
-    }
-    .experience{
-        width: 100%;
-    }
-}
+ @media screen and (max-width:1100px) {
+     #about {
+         flex-direction: column;
+     }
 
-@media screen and (max-width:1050px) {
-    .logo::before{
-        width: 120px;
-        height: 120px;
-    }
-    .cv{
-        column-gap: 120px;
-    }
-    .cv, .logo{
-        height: 180px;
-    }
-}
+     .social {
+         width: 100%;
+         height: 650px;
+     }
 
+     .experience {
+         width: 100%;
+     }
+ }
 
+ @media screen and (max-width:1050px) {
+     .logo::before {
+         width: 120px;
+         height: 120px;
+     }
 
+     .cv {
+         column-gap: 120px;
+     }
 
-
-
-
-
-@media screen and (max-width:990px) {
-    .logo::after{
-        width: 60%;
-    }
-    .cv{
-        column-gap: 100px ;
-    }
-}
+     .cv,
+     .logo {
+         height: 180px;
+     }
+ }
 
 
 
@@ -91,112 +90,173 @@
 
 
 
-@media screen and (max-width:850px) {
-    .cv{
-        column-gap: 20px ;
-        height: 120px;
+
+ @media screen and (max-width:990px) {
+     .logo::after {
+         width: 60%;
+     }
+
+     .cv {
+         column-gap: 100px;
+     }
+ }
+
+
+
+
+
+
+
+ @media screen and (max-width:850px) {
+     .cv {
+         column-gap: 20px;
+         height: 120px;
+         font-size: 2.5rem;
+         border-radius: 30px;
+     }
+
+     .logo::after {
+         top: 25%;
+     }
+
+     .logo {
+         height: 120px;
+         border-radius: 30px;
+
+     }
+
+     .down_cv {
+         width: 60px;
+         height: 60px;
+     }
+
+     .logo::before {
+         width: 100px;
+         height: 100px;
+         top: 10%;
+     }
+
+     .logo::after {
+         font-size: 2rem;
+     }
+ }
+
+
+
+
+
+
+ @media screen and (max-width:690px) {
+     .profile_map_port {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .map_portfolio {
+         width: 100%;
+     }
+
+     .profile_heading {
+         font-size: 4rem;
+         margin-top: 40px;
+     }
+
+     .profile_subtext {
+         font-size: 1.5rem;
+     }
+
+     .cv_logo {
+         flex-direction: column;
+     }
+
+     .cv,
+     .logo {
+         width: 100%;
+     }
+
+     .logo::after {
+         top: 35%;
+     }
+
+     #all {
+         width: 80%;
+         margin-right: 35px;
+     }
+
+     .profile {
+         width: 100%;
+     }
+
+     .tech_git_and {
+         flex-direction: column-reverse;
+     }
+
+     .git_and {
+         width: 100%;
+         flex-direction: row;
+         height: auto;
+     }
+
+     .git {
+         width: 50%;
+         height: 190px;
+     }
+
+     .and {
+         width: 50%;
+         height: 190px;
+
+     }
+
+     .tech_git_and {
+         height: 500px;
+     }
+
+     .tech {
+         width: 95%;
+         height: 100%;
+     }
+
+     .experience {
+         position: relative;
+         top: 70px;
+     }
+
+     .linked {
+         width: 50%;
+     }
+
+     .mail {
+         width: 50%;
+     }
+
+     #work {
+         margin-top: 40px;
+         margin-left: 0;
+     }
+
+ }
+
+ @media screen and (max-width:500px) {
+     .experience {
+         width: 90%;
+     }
+     .profile_heading{
         font-size: 2.5rem;
-        border-radius: 30px;
-    }
-    .logo::after{
-        top: 25%;   
-    }
-    .logo{
-        height: 120px;
-        border-radius: 30px;
+        margin-top: 75px;
+     }
+ }
 
-    }
-    .down_cv{
-        width: 60px;
-        height: 60px;
-    }
-    .logo::before{
-        width: 100px;height: 100px;
-        top: 10%;
-    }
-    .logo::after{
-        font-size: 2rem;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width:690px) {
-    .profile_map_port{
-        display: flex;
-        flex-direction: column;
-    }
-    .map_portfolio{
-        width: 100%;
-    }
-    .profile_heading{font-size: 4rem; margin-top: 40px;}
-    .profile_subtext{font-size: 1.5rem;}
-    .cv_logo{
-        flex-direction: column;
-    }
-    .cv, .logo{
-        width: 100%;
-    }
-    .logo::after{
-        top: 35%;
-    }
-    #all{
-        width: 80%;
-        margin-right: 35px;    }
-    .profile{
-        width: 100%;
-    }
-    .tech_git_and{
-        flex-direction: column-reverse;
-    }
-    .git_and{
-        width: 100%;
-        flex-direction: row;
-        height: auto;
-    }
-    .git{
-        width: 50%;
-        height: 190px;
-    }
-    .and{
-        width: 50%;
-        height: 190px;
-
-    }
-    .tech_git_and{
-        height: 500px;
-    }
-    .tech{
-        width: 95%;
-        height: 100%;
-    }
-    .experience{
-        position: relative;
-        top: 70px;
-    }
-    .linked{
-        width: 50%;
-    }
-    .mail{
-        width: 50%;
-    }
-    #work{
-        margin-top: 40px;
-        margin-left: 0;
-    }
-
-}
-
-@media screen and (max-width:500px) {
-    .experience{
-        width: 90%;
-    }
-}
-
-
-
-
-
+ @media screen and (max-width:451px) {
+     .projects {
+         font-size: 1.7rem;
+         height: 80px;
+         border-radius: 30px;
+     }
+     .project{
+        width: 350px;
+     }
+     .projectdetails{
+        margin-left: 15px;
+     }
+ }
